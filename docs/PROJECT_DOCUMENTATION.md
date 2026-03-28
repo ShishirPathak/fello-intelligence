@@ -119,7 +119,7 @@ fello-intelligence/
 
 ### 6.1 Entry Point
 
-The backend entry point is [`backend/main.py`](/Users/shishirsmac/Personal/fello-intelligence/backend/main.py).
+The backend entry point is [`backend/main.py`](../backend/main.py).
 
 Key responsibilities:
 
@@ -165,7 +165,7 @@ When `POST /enrich-batch` is called:
 
 ## 7. Data Model Layer
 
-The shared request and response models are in [`backend/models.py`](/Users/shishirsmac/Personal/fello-intelligence/backend/models.py).
+The shared request and response models are in [`backend/models.py`](../backend/models.py).
 
 ### 7.1 Input Model
 
@@ -200,7 +200,7 @@ This shape is intentionally broad so the frontend can render one result card reg
 
 ### 8.1 Identify Agent
 
-File: [`backend/agents/identify.py`](/Users/shishirsmac/Personal/fello-intelligence/backend/agents/identify.py)
+File: [`backend/agents/identify.py`](../backend/agents/identify.py)
 
 Responsibilities:
 
@@ -217,7 +217,7 @@ IP ownership is often misleading. Residential traffic and cloud-provider IPs sho
 
 ### 8.2 Enrich Agent
 
-File: [`backend/agents/enrich.py`](/Users/shishirsmac/Personal/fello-intelligence/backend/agents/enrich.py)
+File: [`backend/agents/enrich.py`](../backend/agents/enrich.py)
 
 Responsibilities:
 
@@ -239,7 +239,7 @@ This agent is the main source of:
 
 ### 8.3 Intent Agent
 
-File: [`backend/agents/intent.py`](/Users/shishirsmac/Personal/fello-intelligence/backend/agents/intent.py)
+File: [`backend/agents/intent.py`](../backend/agents/intent.py)
 
 This is a pure rules engine.
 
@@ -265,7 +265,7 @@ This is deliberately deterministic so intent remains explainable in a demo.
 
 ### 8.4 Persona Agent
 
-File: [`backend/agents/persona.py`](/Users/shishirsmac/Personal/fello-intelligence/backend/agents/persona.py)
+File: [`backend/agents/persona.py`](../backend/agents/persona.py)
 
 Responsibilities:
 
@@ -276,7 +276,7 @@ The role is not claimed as ground truth. It is a high-confidence hypothesis for 
 
 ### 8.5 Signals Agent
 
-File: [`backend/agents/signals.py`](/Users/shishirsmac/Personal/fello-intelligence/backend/agents/signals.py)
+File: [`backend/agents/signals.py`](../backend/agents/signals.py)
 
 Responsibilities:
 
@@ -291,7 +291,7 @@ This gives the sales team recent external context beyond the company profile alo
 
 ### 8.6 Synthesis Agent
 
-File: [`backend/agents/synthesize.py`](/Users/shishirsmac/Personal/fello-intelligence/backend/agents/synthesize.py)
+File: [`backend/agents/synthesize.py`](../backend/agents/synthesize.py)
 
 Responsibilities:
 
@@ -308,7 +308,7 @@ The summary is meant to answer:
 
 ### 8.7 Cache Layer
 
-File: [`backend/cache.py`](/Users/shishirsmac/Personal/fello-intelligence/backend/cache.py)
+File: [`backend/cache.py`](../backend/cache.py)
 
 Responsibilities:
 
@@ -324,8 +324,8 @@ This reduces repeat calls to Apollo and other enrichment logic for the same doma
 
 Files:
 
-- [`frontend/src/main.jsx`](/Users/shishirsmac/Personal/fello-intelligence/frontend/src/main.jsx)
-- [`frontend/src/App.jsx`](/Users/shishirsmac/Personal/fello-intelligence/frontend/src/App.jsx)
+- [`frontend/src/main.jsx`](../frontend/src/main.jsx)
+- [`frontend/src/App.jsx`](../frontend/src/App.jsx)
 
 The frontend:
 
@@ -341,7 +341,7 @@ The frontend:
 
 ### 9.2 Input Panel
 
-File: [`frontend/src/components/InputPanel.jsx`](/Users/shishirsmac/Personal/fello-intelligence/frontend/src/components/InputPanel.jsx)
+File: [`frontend/src/components/InputPanel.jsx`](../frontend/src/components/InputPanel.jsx)
 
 Responsibilities:
 
@@ -355,18 +355,18 @@ Responsibilities:
 
 Main result components:
 
-- [`frontend/src/components/AccountCard.jsx`](/Users/shishirsmac/Personal/fello-intelligence/frontend/src/components/AccountCard.jsx)
-- [`frontend/src/components/PersonaCard.jsx`](/Users/shishirsmac/Personal/fello-intelligence/frontend/src/components/PersonaCard.jsx)
-- [`frontend/src/components/ActionsCard.jsx`](/Users/shishirsmac/Personal/fello-intelligence/frontend/src/components/ActionsCard.jsx)
-- [`frontend/src/components/BusinessSignals.jsx`](/Users/shishirsmac/Personal/fello-intelligence/frontend/src/components/BusinessSignals.jsx)
-- [`frontend/src/components/TechStack.jsx`](/Users/shishirsmac/Personal/fello-intelligence/frontend/src/components/TechStack.jsx)
-- [`frontend/src/components/UnresolvedCard.jsx`](/Users/shishirsmac/Personal/fello-intelligence/frontend/src/components/UnresolvedCard.jsx)
+- [`frontend/src/components/AccountCard.jsx`](../frontend/src/components/AccountCard.jsx)
+- [`frontend/src/components/PersonaCard.jsx`](../frontend/src/components/PersonaCard.jsx)
+- [`frontend/src/components/ActionsCard.jsx`](../frontend/src/components/ActionsCard.jsx)
+- [`frontend/src/components/BusinessSignals.jsx`](../frontend/src/components/BusinessSignals.jsx)
+- [`frontend/src/components/TechStack.jsx`](../frontend/src/components/TechStack.jsx)
+- [`frontend/src/components/UnresolvedCard.jsx`](../frontend/src/components/UnresolvedCard.jsx)
 
 The frontend does not generate business logic. It renders backend decisions.
 
 ## 10. Mock Data Strategy
 
-File: [`mock_data/visitors.json`](/Users/shishirsmac/Personal/fello-intelligence/mock_data/visitors.json)
+File: [`mock_data/visitors.json`](../mock_data/visitors.json)
 
 Purpose:
 

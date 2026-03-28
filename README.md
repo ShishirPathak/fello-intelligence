@@ -4,7 +4,7 @@ Fello Intelligence is an AI account intelligence and enrichment system built for
 
 It combines IP resolution, company enrichment, persona inference, intent scoring, business signal discovery, and AI synthesis into a single FastAPI backend and React dashboard.
 
-Detailed project documentation is available in [docs/PROJECT_DOCUMENTATION.md](/Users/shishirsmac/Personal/fello-intelligence/docs/PROJECT_DOCUMENTATION.md).
+Detailed project documentation is available in [docs/PROJECT_DOCUMENTATION.md](docs/PROJECT_DOCUMENTATION.md).
 
 ## Architecture
 
