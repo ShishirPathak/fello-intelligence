@@ -1,0 +1,8 @@
+# Python dependencies for the Fello Intelligence backend service.
+fastapi
+uvicorn
+httpx
+openai
+python-dotenv
+redis
+pydantic
