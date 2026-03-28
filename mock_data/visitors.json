@@ -1,0 +1,41 @@
+[
+  {
+    "id": "visitor_001",
+    "label": "HubSpot",
+    "ip": "34.201.12.88",
+    "mock_resolved": true,
+    "mock_company": "HubSpot",
+    "pages": ["/pricing", "/ai-sales-agent", "/case-studies"],
+    "time_on_site_seconds": 222,
+    "visits_this_week": 3
+  },
+  {
+    "id": "visitor_002",
+    "label": "Salesforce",
+    "ip": "52.14.33.91",
+    "mock_resolved": true,
+    "mock_company": "Salesforce",
+    "pages": ["/case-studies", "/features", "/about"],
+    "time_on_site_seconds": 110,
+    "visits_this_week": 2
+  },
+  {
+    "id": "visitor_003",
+    "label": "Unresolved — Residential",
+    "ip": "98.76.54.32",
+    "mock_resolved": false,
+    "pages": ["/pricing"],
+    "time_on_site_seconds": 30,
+    "visits_this_week": 1
+  },
+  {
+    "id": "visitor_004",
+    "label": "Adobe",
+    "ip": "18.204.55.12",
+    "mock_resolved": true,
+    "mock_company": "Adobe",
+    "pages": ["/blog", "/about"],
+    "time_on_site_seconds": 55,
+    "visits_this_week": 1
+  }
+]
