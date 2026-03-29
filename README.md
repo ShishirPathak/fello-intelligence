@@ -8,48 +8,7 @@ Detailed project documentation is available in [docs/PROJECT_DOCUMENTATION.md](d
 
 ## Architecture
 
-```text
-                  +----------------------+
-                  |   React Dashboard    |
-                  |  Visitor or Company  |
-                  +----------+-----------+
-                             |
-                             v
-                    +--------+--------+
-                    |  FastAPI API    |
-                    | /analyze        |
-                    | /enrich-batch   |
-                    +--------+--------+
-                             |
-        +--------------------+--------------------+
-        |                    |                    |
-        v                    v                    v
-+---------------+   +----------------+   +----------------+
-| Identify Agent |   | Intent Agent  |   | Persona Agent  |
-| ipinfo lookup  |   | rules engine  |   | OpenAI API     |
-+-------+-------+   +--------+-------+   +--------+-------+
-        |                        |                    |
-        +-----------+------------+--------------------+
-                    |
-                    v
-         +----------+-----------+
-         | Enrich + Signals     |
-         | Apollo / OpenAI      |
-         | Serper / OpenAI      |
-         +----------+-----------+
-                    |
-                    v
-         +----------+-----------+
-         | Synthesize Agent     |
-         | OpenAI summary       |
-         +----------+-----------+
-                    |
-                    v
-             +------+------+
-             | Redis Cache |
-             | 24h by domain|
-             +-------------+
-```
+![Fello Intelligence Architecture](docs/fello_intelligence_overview.svg)
 
 ## Setup
 
